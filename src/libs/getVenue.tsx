@@ -1,5 +1,9 @@
 import { notFound } from "next/navigation";
-import type { VenueDetailJson } from "../../interface";
+
+type VenueDetailJson = {
+  success: boolean;
+  data: VenueItem;
+};
 
 export default async function getVenue(vid: string): Promise<VenueDetailJson> {
   const response = await fetch(

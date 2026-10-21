@@ -1,5 +1,4 @@
 import Card from "@/components/Card";
-import type { VenueItem, VenueJson } from "../../interface";
 
 export default async function VenueCatalog({
   venuesJson,
